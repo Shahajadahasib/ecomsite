@@ -18,6 +18,7 @@ from django.urls import path
 from shop import views
 from .import settings
 from django.conf.urls.static import static
+import shop.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -8,8 +8,9 @@ class Product(models.Model):
     title = models.CharField(max_length=100)
     price = models.FloatField()
     discount_price = models.FloatField()
+    jls_extract_var = Category
     category = models.ForeignKey(
-        Category, on_delete=models.CASCADE, default=1)
+        jls_extract_var, on_delete=models.CASCADE, default=1)
     description = models.CharField(
         max_length=200, default='', null=True, blank=True)
     image = models.ImageField(upload_to="uploads/products/")
