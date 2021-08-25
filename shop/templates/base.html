@@ -3,150 +3,179 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1j" crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+		integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1j" crossorigin="anonymous">
 
-  <title>Ecom site</title>
-
-
-
+	<title>Ecom site</title>
 
 
-{% comment %} this for login. html css {% endcomment %}
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-<title>Bootstrap Simple Registration Form</title>
-{% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> {% endcomment %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-<style>
-	body {
 
-		color: #fff;
-		background: #63738a;
-		font-family: 'Roboto', sans-serif;
-	}
-  .login-form{
-		width: 400px;
-		margin: 0 auto;
-		padding: 30px 0;
-	}
-	.login-form h2{
-		color: #636363;
-        margin: 0 0 15px;
-		position: relative;
-		text-align: center;
-    }
-	.login-form h2:before, .signup-form h2:after{
-		height: 2px;
-		width: 30%;
-		background: #d4d4d4;
-		position: absolute;
-		top: 50%;
-		z-index: 2;
-	}	
-	.login-form h2:before{
-		left: 0;
-  }
-    .login-form form{
-		color: #999;
-		border-radius: 3px;
-    	margin-bottom: 15px;
-        background: #f2f3f7;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
-    .form-control{
-		height: 40px;
-		box-shadow: none;
-		color: #969fa4;
-	}
-	.form-control:focus{
-		border-color: #5cb85c;
-	}
-    .form-control, .btn{        
-        border-radius: 3px;
-    }
-	.signup-form{
-		width: 400px;
-		margin: 0 auto;
-		padding: 30px 0;
-	}
-	.signup-form h2{
-		color: #636363;
-        margin: 0 0 15px;
-		position: relative;
-		text-align: center;
-  }
 
-	.signup-form h2:before, .signup-form h2:after{
-		content: "";
-		height: 2px;
-		width: 30%;
-		background: #d4d4d4;
-		position: absolute;
-		top: 50%;
-		z-index: 2;
-	}	
-	.signup-form h2:before{
-		left: 0;
-	}
-	.signup-form h2:after{
-		right: 0;
-	}
-    .signup-form .hint-text{
-		color: #999;
-		margin-bottom: 30px;
-		text-align: center;
-	}
-    .signup-form form{
-		color: #999;
-		border-radius: 3px;
-    	margin-bottom: 15px;
-        background: #f2f3f7;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
-	.signup-form .form-group{
-		margin-bottom: 20px;
-	}
-	.signup-form input[type="checkbox"]{
-		margin-top: 3px;
-	}
-	.signup-form .btn{        
-        font-size: 16px;
-        font-weight: bold;		
-		min-width: 140px;
-        outline: none !important;
-    }
-	.signup-form .row div:first-child{
-		padding-right: 10px;
-	}
-	.signup-form .row div:last-child{
-		padding-left: 10px;
-	}    	
-    .signup-form a{
-		color: #fff;
-		text-decoration: underline;
-	}
-    .signup-form a:hover{
-		text-decoration: none;
-	}
-	.signup-form form a{
-		color: #5cb85c;
-		text-decoration: none;
-	}	
-	.signup-form form a:hover{
-		text-decoration: underline;
-	}  
-</style>
 
-{% comment %} here end login. html css{% endcomment %}
+	{% comment %} this for login. html css {% endcomment %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<title>Bootstrap Simple Registration Form</title>
+	{% comment %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> {%
+	endcomment %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body {
+
+			color: #fff;
+			background: #63738a;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.login-form {
+			width: 400px;
+			margin: 0 auto;
+			padding: 30px 0;
+		}
+
+		.login-form h2 {
+			color: #636363;
+			margin: 0 0 15px;
+			position: relative;
+			text-align: center;
+		}
+
+		.login-form h2:before,
+		.signup-form h2:after {
+			height: 2px;
+			width: 30%;
+			background: #d4d4d4;
+			position: absolute;
+			top: 50%;
+			z-index: 2;
+		}
+
+		.login-form h2:before {
+			left: 0;
+		}
+
+		.login-form form {
+			color: #999;
+			border-radius: 3px;
+			margin-bottom: 15px;
+			background: #f2f3f7;
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+			padding: 30px;
+		}
+
+		.form-control {
+			height: 40px;
+			box-shadow: none;
+			color: #969fa4;
+		}
+
+		.form-control:focus {
+			border-color: #5cb85c;
+		}
+
+		.form-control,
+		.btn {
+			border-radius: 3px;
+		}
+
+		.signup-form {
+			width: 400px;
+			margin: 0 auto;
+			padding: 30px 0;
+		}
+
+		.signup-form h2 {
+			color: #636363;
+			margin: 0 0 15px;
+			position: relative;
+			text-align: center;
+		}
+
+		.signup-form h2:before,
+		.signup-form h2:after {
+			content: "";
+			height: 2px;
+			width: 30%;
+			background: #d4d4d4;
+			position: absolute;
+			top: 50%;
+			z-index: 2;
+		}
+
+		.signup-form h2:before {
+			left: 0;
+		}
+
+		.signup-form h2:after {
+			right: 0;
+		}
+
+		.signup-form .hint-text {
+			color: #999;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.signup-form form {
+			color: #999;
+			border-radius: 3px;
+			margin-bottom: 15px;
+			background: #f2f3f7;
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+			padding: 30px;
+		}
+
+		.signup-form .form-group {
+			margin-bottom: 20px;
+		}
+
+		.signup-form input[type="checkbox"] {
+			margin-top: 3px;
+		}
+
+		.signup-form .btn {
+			font-size: 16px;
+			font-weight: bold;
+			min-width: 140px;
+			outline: none !important;
+		}
+
+		.signup-form .row div:first-child {
+			padding-right: 10px;
+		}
+
+		.signup-form .row div:last-child {
+			padding-left: 10px;
+		}
+
+		.signup-form a {
+			color: #fff;
+			text-decoration: underline;
+		}
+
+		.signup-form a:hover {
+			text-decoration: none;
+		}
+
+		.signup-form form a {
+			color: #5cb85c;
+			text-decoration: none;
+		}
+
+		.signup-form form a:hover {
+			text-decoration: underline;
+		}
+	</style>
+
+	{% comment %} here end login. html css{% endcomment %}
 
 
 
@@ -161,20 +190,18 @@
 
 <body>
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous" />
 
-    <title>Ecom site</title>
-  </head>
+		<title>Ecom site</title>
+	</head>
 
-  <body>
-
-
-
+	<body>
 
 
 
@@ -183,43 +210,43 @@
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="">E-site</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-          </ul>
-          <form action="{{product.id}}" class="d-flex">
-            <input type="Product" name="item_name" placeholder="Search" class="form-control me-2" />
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-
-          <ul class="navbar-nav my-2 mb-lg-2">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#">Logout</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="/login">Login</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="/signup">Signup</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    {% block content %} {% endblock %}
 
 
 
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="">E-site</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+					</ul>
+					<form action="{{product.id}}" class="d-flex">
+						<input type="Product" name="item_name" placeholder="Search" class="form-control me-2" />
+						<button class="btn btn-success" type="submit">Search</button>
+					</form>
 
+					<ul class="navbar-nav my-2 mb-lg-2">
+						<li class="nav-item active">
+							<a class="nav-link" aria-current="page" href="#">Logout</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" aria-current="page" href="/login">Login</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" aria-current="page" href="/signup">Signup</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		{% block content %} {% endblock %}
 
 
 
@@ -243,18 +270,22 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-  </body>
+
+
+
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+	</body>
 
 </html>
 

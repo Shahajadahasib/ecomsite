@@ -1,27 +1,125 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #34495e;
+    }
+
+    .box {
+      width: 364px;
+      padding: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #2a2e35;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .box h1 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .box input[type="text"],
+    .box input[type="password"] {
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 1px solid #3498db;
+      padding: 14px 10px;
+      width: 220px;
+      outline: none;
+      color: white;
+      border-radius: 15px;
+      transition: 0.25s;
+
+      transition-delay: 0s;
+      transition-property: box-shadow, background-color, transform;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
+    }
+
+    .box input[type="text"]:focus,
+    .box input[type="password"]:focus {
+      width: 230px;
+      /*this is for animation size color*/
+      border-color: #e74c3c;
+      /*this is for border outline animation color*/
+    }
+
+    .box input[type="text"]:focus,
+    .box input[type="password"]:hover {
+      transform: scale(1.02, 1.03);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+      background-color: rgb(68, 59, 59);
+    }
+
+    .box input[type="submit"] {
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 1px solid #c23222;
+      padding: 14px 40px;
+      width: 200px;
+      outline: none;
+      color: white;
+      border-radius: 10px;
+      transition: 0.25s;
+      cursor: pointer;
+    }
+
+    .box input[type="submit"]:hover {
+      background: #4cd137;
+    }
+  </style>
+  <div>
+    <form action="/login" method="POST" class="box">
+      <h2>Login</h2>
+      <p class="hint-text">Your E-comerce site</p>
+      {% csrf_token %} {% if error %}
+      <div class="alert alert-danger" role="alert">{{error}}</div>
+      {% endif %}
 
 
+      <input type="text" name="email" id="" value="{{values.email}}" class="form-control form-control-sm"
+        placeholder="Email" autocomplete="off">
 
-<div class="signup-form">
-    <form action="/examples/actions/confirmation.php" method="post">
-        <h2>Login</h2>
-        <p class="hint-text">Login in your account in E-comerce site</p>
 
-        <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-        </div>
+      <input type="password" name="password" id="" class="form-control form-control-sm" placeholder="Password">
 
-        <div class="form-group" align="center">
-            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
-        </div>
+      <input type="submit" name="" value="Login">
+
+
     </form>
-    <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
-</div>
+  </div>
+  {% endblock %}
+  <!-- <div class="text-center">Already have an account? <a href="#">Sign in</a></div> -->
 
-<!-- <div class="container">
+  <!-- <div class="container">
     <div class="p-4 m-4">
         <div class="col-lg-4 mt-4 mb-4 mx-auto border rounded pt-4">
             <h3 class="alart alert-light border mt-4 mb-4 rounded">Login Here</h3>
@@ -56,15 +154,4 @@
                 </div>
         </div>
     </div>
-
  -->
-
-
-
-
-
-
-
-
-
-{% endblock %}

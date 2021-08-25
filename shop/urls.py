@@ -1,8 +1,14 @@
 from django.contrib import admin
-from django.urls import path
-from .views import index, signup
+from django.urls import include, path
+from .views import Index, Signup, Login
 
-from .views import index
+import ecomsite.urls
 urlpatterns = [
-    path('', index, name='homepage'),
+    path('', Index.as_view(), name='index'),
+    # path('login', Login.as_view()),
+    # path('', views.Index.as_view(), name='index'),
+    path('signup', Signup.as_view()),
+    path('login', Login.as_view()),
+
+
 ]
